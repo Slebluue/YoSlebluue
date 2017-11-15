@@ -36,4 +36,3 @@ MIT
 
 ------
 Originially built for student use at Coding Dojo bootcamp
-# YoSlebluue
