@@ -1,4 +1,4 @@
-# Slebluue Generator
+# Slebluue ASP.NET CORE 1.1 Scaffolding
 One of many C# ASP.NET Core - Yeoman Generators
 ******
 Generator built to offer a very simple project layout and starting place.
