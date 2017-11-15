@@ -27,8 +27,12 @@ Once installed navigate into newly created folder and run ```dotnet restore```
 This specific instance is created to integrate with PostGres.
 Navigate to appsettings.json and change your connection info accordingly.
 After settings are updated run:
-```dotnet ef migrations add FirstMigration```
-```dotnet ef database update```
+```
+dotnet ef migrations add FirstMigration
+```
+```
+dotnet ef database update
+```
 
 ### License
 
