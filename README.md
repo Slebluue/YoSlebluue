@@ -21,7 +21,7 @@ Install: ```npm install -g generator-slebluue```
 
 Run ```yo slebluue```, optionally passing an app name
 ```
-yo candyman [app=name]
+yo slebluue [app=name]
 ```
 
 Once installed navigate into newly created folder and run ```dotnet restore```
