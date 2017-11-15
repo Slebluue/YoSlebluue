@@ -1,0 +1,28 @@
+{
+  "name": "generator-slebluue",
+  "version": "0.2.0",
+  "license": "MIT",
+  "description": "Yeoman generator for a base ASP.NET Core project - Edited by Mitchell Morrison for coding dojo test, https://github.com/slebluue",
+  "repository": "git://github.com/slebluue/YoSlebluue",
+  "author": {
+    "name": "Mitchell Morrison",
+    "email": "mitchell8morrison@gmail.com",
+    "url": "https://github.com/slebluue"
+  },
+  "files": [
+    "app",
+    "router"
+  ],
+  "keywords": [
+    "yeoman-generator",
+    "scaffold",
+    "generator",
+    "asp.net",
+    "core",
+    "mvc"
+  ],
+  "dependencies": {
+    "klaw": "^1.3.0",
+    "yeoman-generator": "^0.24.1"
+  }
+}
