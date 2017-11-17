@@ -48,10 +48,7 @@ namespace <%= namespace %>.Controllers
         [Route("")]
         public IActionResult Index()
         {
-            if(!CheckLoggedIn())
-            {
-                return RedirectToAction("Index", "Home");
-            }
+            CheckLoggedIn();
             return View();
         }
 
