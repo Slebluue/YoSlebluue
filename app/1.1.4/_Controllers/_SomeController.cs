@@ -28,28 +28,33 @@ namespace <%= namespace %>.Controllers
             return now;
         }
 
-        public void CheckLoggedIn()
+        public bool CheckLoggedIn()
         {
             int? id = HttpContext.Session.GetInt32("LOGGED_IN_USER");
             User LoggedIn = _context.Users.SingleOrDefault(user => user.userid == id);
             ViewBag.User = LoggedIn;
+            if(ViewBag.User != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         // GET: /Home/
         [HttpGet]
         [Route("/dashboard")]
+        [HttpGet]
+        [Route("")]
         public IActionResult Index()
         {
-            try
+            if(!CheckLoggedIn())
             {
-                CheckLoggedIn();
-                return View();
+                return RedirectToAction("Index", "Home");
             }
-            catch
-            {
-                return View();
-            }
-            
+            return View();
         }
     }
 }
