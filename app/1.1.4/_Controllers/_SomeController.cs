@@ -46,8 +46,6 @@ namespace <%= namespace %>.Controllers
         // GET: /Home/
         [HttpGet]
         [Route("/dashboard")]
-        [HttpGet]
-        [Route("")]
         public IActionResult Index()
         {
             if(!CheckLoggedIn())
